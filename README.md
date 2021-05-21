@@ -1,4 +1,3 @@
-# vx_smallRoutine
 vscode开发微信小程序安装的插件:
 1. wechat-snippet
 微信小程序代码辅助,代码片段自动完成
@@ -8,4 +7,5 @@ vscode开发微信小程序安装的插件:
 输入空格会触发对应标签的属性补全
 3. wxapp-helper
 选择创建wx组件，自动生成配套的文件
+
 接口文档：https://www.showdoc.com.cn/128719739414963?page_id=2513235043485226
