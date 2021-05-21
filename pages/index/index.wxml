@@ -1,0 +1,16 @@
+<view class="pyg_index">
+    <!-- 搜索框 start -->
+    <SearchInput></SearchInput>
+    <!-- 搜索框 exit -->
+    <!-- 轮播图 start -->
+    <view class="index_swiper">
+        <swiper>
+            <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+                <navigator>
+                    <image mode="widthFix" src="{{item.image_src}}"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 轮播图 exit -->
+</view>
