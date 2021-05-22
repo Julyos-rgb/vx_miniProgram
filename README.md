@@ -1,4 +1,4 @@
-第一次开发微信小程序，本项目为练手项目，将实时更新直至结束
+[第一次开发微信小程序，本项目为练手项目，将实时更新直至结束]
 
 vscode开发微信小程序安装的插件:
 1. wechat-snippet
@@ -10,7 +10,7 @@ vscode开发微信小程序安装的插件:
 3. wxapp-helper
 选择创建wx组件，自动生成配套的文件
 
-快捷键:
+[快捷键]:
 Ctrl+S：保存文件
 Ctrl+【， Ctrl+】：代码行缩进
 Ctrl+Shift+【， Ctrl+Shift+】：折叠打开代码块
@@ -29,4 +29,5 @@ Ctrl+Shift+L：选中所有匹配
 Ctrl+D：选中匹配
 Ctrl+U：光标回退
 
-接口文档：https://www.showdoc.com.cn/128719739414963?page_id=2513235043485226
+[视频教程]: https://www.bilibili.com/video/BV1nE41117BQ?p=1
+[接口文档]：https://www.showdoc.com.cn/128719739414963?page_id=2513235043485226
