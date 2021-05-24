@@ -1,56 +1,52 @@
 [第一次开发微信小程序，本项目为练手项目，将实时更新直至结束]
+It is the first time to develop WeChat small program. This project is a hands-on project. It will be updated in real time until the end
 
-(一)version:1.0
-1.项目-预览
-2.项目-技术造型
-3.项目-引入iconfont
-4.项目-引入tabbar
-5.项目-初始化页面样式
+(一)version:1.0 初始化 init
+1.预览 Preview
+2.技术造型 Technical Modeling
+3.引入iconfont import iconfont
+4.引入tabbar import tabbar
+5.初始化页面样式 Initialize the page styles
 
-(二)version:2.0
-1.首页-搜索框
-2.首页-获取轮播图数据
-3.首页-轮播图-动态渲染
-4.首页-将原生的请求修改为Promise的方式
-5.首页-分类导航
-6.首页-楼层
+(二)version:2.0 首页 homepage
+1.搜索框 Search Bar
+2.获取轮播图数据 Obtain the rotation chart data
+3.轮播图-动态渲染 Rotating - Dynamic Rendering
+4.将原生的请求修改为Promise的方式  Modify a native request to a Promise
+5.分类导航 Classification of navigation
+6.楼层 level
 
-(三）version:3.0
-1.分类-接口数据和页面效果的关系
-2.分类-获取接口数据
-3.分类-页面布局
-4.分类-点击菜单切换商品内容
-5.分类-使用缓存技术
-6.分类-点击菜单-右侧列表置顶
-7.分类-优化接口代码-提取公共接口路径
-8.分类-优化接口-简化返回值和使用es7的async语法
+(三）version:3.0 商品详情 details
+1.接口数据和页面效果的关系 Relationship between interface data and page effects
+2.获取接口数据 Obtaining interface data
+3.页面布局 layout
+4.点击菜单-切换商品内容 Click the menu to switch the product content
+5.使用缓存技术 Using Cache Technology
+6.点击菜单-右侧列表置顶 Click Menu - List on the right to top
+7.优化接口代码-提取公共接口路径 Optimize interface code - Extract the public interface path
+8.优化接口-简化返回值和使用es7的async语法 Optimize the interface - Simplify return values and use ES7's async syntax
 
-(四)version:4.0
-1.列表-获取分类id
-2.列表-实现搜索框和tabs组件
-3.列表-静态样式
-4.列表-动态渲染
-5.列表-加载下一页数据
-6.列表-下拉刷新
-7.列表-添加全局的正在加载中图标效果
+(四)version:4.0 列表 list
+1.获取分类id Get the category ID
+2.实现搜索框和tabs组件 Implement the search box and tabs component
+3.动态渲染样式 Dynamic Render Styles
+4.加载下一页数据  Load the next page of data
+5.下拉刷新 pull to refresh
+6.添加全局的正在加载中图标效果 Adds global loading icon effect
 
-(五)version:5.0
-1.购物车-购物车分析&收货按钮样式
-2.购物车-收货地址分析
-3.购物车-完整的获取收货地址流程
-4.购物车-优化获取收货地址的代码
-5.购物车-收货地址和按钮切换显示
-6.购物车-购物车列表-静态样式
-7.购物车-底部工具栏-静态结构
-8.购物车-数据动态渲染
-9.购物车-全选-数据展示
-10.购物车-总价格和总数量
-11.购物车-商品选中
-12.购物车-全选-反选
-13.购物车-商品数量编辑
-14.购物车-商品删除
-15.购物车-没有商品的状态提示
-16.购物车-结算按钮功能
+(五)version:5.0 购物车 cart
+1.购物车分析&收货按钮样式 Shopping cart analysis & receive button style
+2.收货地址分析 Receipt address analysis
+3.完整的获取收货地址流程 Complete process of obtaining shipping address
+4.优化获取收货地址的代码 Optimize the code to get the shipping address
+5.收货地址和按钮切换显示 Receiving address and button toggle display
+6.数据动态渲染 Shopping cart - dynamic rendering of data
+7.全选-数据展示  Select All - Data Display
+8.总价格和总数量 Total price and total quantity
+9.商品数量编辑 Commodity quantity editor
+10.商品删除功能 Remove Product
+11.没有商品的状态提示 No item status prompt
+12.结算按钮功能 Settlement button function
 
 
 vscode开发微信小程序安装的插件:
