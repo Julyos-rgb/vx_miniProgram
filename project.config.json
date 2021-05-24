@@ -39,7 +39,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.14.4",
+  "libVersion": "2.14.0",
   "appid": "wx505cd6d20e95c80a",
   "projectname": "miniprogram-1",
   "debugOptions": {
@@ -77,6 +77,12 @@
           "name": "商品详情",
           "pathName": "pages/goods_detail/index",
           "query": "goods_id=43985",
+          "scene": null
+        },
+        {
+          "name": "购物车",
+          "pathName": "pages/cart/index",
+          "query": "",
           "scene": null
         }
       ]

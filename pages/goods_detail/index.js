@@ -1,3 +1,6 @@
+// 1 发送请求获取数据
+// 2 点击轮播图预览大图
+// 3 点击加入购物车
 import {
   request
 } from "../../request/index.js";
@@ -9,7 +12,8 @@ Page({
   data: {
     goodsObj: {}
   },
-
+  //商品对象
+  GoodsInfo: {},
   /**
    * 生命周期函数--监听页面加载
    */
@@ -18,8 +22,8 @@ Page({
       goods_id
     } = options;
     this.getGoodsDetail(goods_id);
-
   },
+  //获取商品详情数据
   async getGoodsDetail(goods_id) {
     const goodsObj = await request({
       url: "/goods/detail",
@@ -27,57 +31,41 @@ Page({
         goods_id
       }
     });
+    this.GoodsInfo = goodsObj;
     this.setData({
       goodsObj
     })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+  //点击轮播图放大预览
+  handlePrevewImage(e) {
+    const urls = this.GoodsInfo.data.message.pics.map(v => v.pics_mid);
+    const current = e.currentTarget.dataset.url;
+    wx.previewImage({
+      current,
+      urls
+    });
+
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  //点击加入购物车
+  handleCartAdd() {
+    let cart = wx.getStorageSync("cart") || [];
+    let index = cart.findIndex(v => v.goods_id === this.GoodsInfo.goods_id)
+    if (index === -1) {
+      this.GoodsInfo.num = 1;
+      this.GoodsInfo.checked = true;
+      cart.push(this.GoodsInfo);
+    } else {
+      cart[index].num++
+    }
+    wx.setStorageSync('cart', cart)
+    wx.showToast({
+      title: '加入成功',
+      icon: 'success',
+      mask: true
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
